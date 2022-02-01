@@ -1,116 +1,75 @@
-
-h1,h2,h3,h4,h5,button,.amiibo-name{
-    font-family: 'Bitter', serif;
+@font-face{
+    font-family: Galgony;
+    src: url(font\Galgony.ttf);
 }
-#ribbon{
-    /* rgba : solidos y opacidad de 0 a 1 */
-    /* rgb solo colores solidos  */
-    background: rgb(219,26,26);
-    background-image: repeating-linear-gradient(
-    45deg, transparent, transparent 25px, rgba(131,21,21,0.5)25px,rgba(131,21,21,0.5)40px);}
-#ribbon::after{
-    content: '';
-    background-color: transparent;
-    display: block;
-    height: 20px;
-    width: 50%;
-    margin: 0 auto;
-    position: relative;
-    left: auto;
-    margin-top: -40px;
+h1,h2,h3,h4,h5,button{
+    font-family: 'Galgony';
 }
-#birthday{
-    background-color: rgb(219, 26, 26);
-    position: relative;
-    margin-top: -20px;
-    z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-#birthday img{
-    position: relative;
-    margin-top: -30px;
-}
-.text-shadow{
-    text-shadow: 0 3px 3px rgba(0,0,0,0.5);
-}
-#separator-ribbon{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-}
-#separator-ribbon .content{
-    width: 150%;
-    height: 150px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    margin-left: -25%;
-}
-.card-border{
-    border: solid 10px #ffff;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all ease-out 0.2s;
-}
-.card-border:hover{
-    transform: scale(1.05);
-}
-#games{
-    background: rgb(255,255,255);
-    background: url(../img/bg-02.png), linear-gradient(0deg,rgba(255,255,255,1)0%,rgba(99,196,255,1)57%);
-    background-repeat: repeat-x;
-    background-size: 75%;
-    margin-top:-20px;
-}
-.texto-games{
-    color: var(--bg-blue);
-}
-#separator-amiibos{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-}
-#separator-amiibos .content{
-    background: url(../img/bg-03.png);
-    width: 110%;
-    height: 100px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    margin-left: -5%;
-}
-#amiibos {
-    background: url(../img/bg-01.png), url(../img/bg-03.png);
-    background-repeat: no-repeat,repeat;
-    background-position: bottom center,center center;
-    background-size: 100%,auto;
-}
-.amiibo{
-    cursor: pointer;
-    transition: all ease-out 0.2s;
-}
-.amiibo:hover{
-    transform: scale(1.05);
-}
-.amiibo-name{
-    background-color: rgba(0,0,0,0.4);
+.h1{
+    margin-bottom: 24px;
     color: #fff;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
 }
-#separator-amiibos-footer{
-    height: 20vh;
+.collections{
+    margin-bottom: 24px;
+    color: #000;
 }
-#play{
-    background: url(../img/bg-04.png);
-    background-color:rgb(255,255,219);
-    background-size: 40px 40px;
-}
-#footer{
-    background: url(../img/bg-04.png);
-    background-color:rgb(224,144,24);
-    background-size: 50px 50px;
+#landingpage{
+    overflow: hidden;
 }
 
+.hi-slide{
+    position: relative;
+}
+.hi-slide .hi-prev, .hi-slide .hi-next{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(29, 4, 4);
+    color: rgb(250, 244, 244);
+    transition: all .7s;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+}
+.hi-slide .hi-prev:hover, .hi-slide .hi-next:hover{
+    opacity: 1;
+}
+.hi-slide .hi-prev{
+    left: 70px;
+}
+.hi-slide .hi-prev::before{
+    content: '<';
+}
+.hi-slide .hi-next{
+    right: -70px;
+}
+.hi-slide .hi-next::before{
+    content: '>';
+}
+.hi-slide > ul{
+    display: flex;
+    list-style: none;
+}
+.hi-slide > ul > li {
+    z-index: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    visibility: visible;
+}
+.hi-slide > ul > li > li {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.img-slide{
+    width: 100%;
+    height: 100%;
+}

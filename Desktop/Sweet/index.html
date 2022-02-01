@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sitio Web Amiibo</title>
+    <title> Sweet</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;800&display=swap" rel="stylesheet">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Css Personalizado -->
@@ -16,259 +16,111 @@
 </head>
 <body>
     <!--Inicio NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" alt="" width="200px">
-            </a>          
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <!-- tag "a" para hipervinculos -->
-                        <!--- aria-current  es una guia de software con dirreccion de navegaciom-->
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Summer Pack</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign in</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <!-- <div class="col-2 bg-red"> -->
+                    <a class="navbar-brand" href="#">
+                        <img src="" alt="" width="200px" background="#fff">
+                    </a>          
+                <!-- </div> -->
+                <!-- <div class="col-5 ms-auto"> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="nav-item">
+                                <!-- tag "a" para hipervinculos -->
+                                <!--- aria-current  es una guia de software con dirreccion de navegaciom-->
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#actually">Actually</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#carouselExampleSlidesOnly">Collections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Boutique</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
     </nav>
     <!--Fin NAVBAR-->
-    <!--Inicio CARROUSEL-->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slide01.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide02.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide03.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
+    <!--Inicio Landingpage-->
+    <div id="landingpage" class="">
+        <img src="audiovisual/choco.jpeg" alt="" srcset="" width="1280px" height="680px">
     </div>
-    <!--Fin CARROUSEL-->
-    <!--Inicio RIBBON-->
-    <div class="container-fluid" id="ribbon">
-        <div class="container w-50 px-5 rounded" id="birthday">
-            <div class="row align-items-center">
-                <div class="col-md p-3">
-                    <!-- d-block : movimiento unificado -->
-                    <img src="img/image01.png" alt="" class="w-75 mx-auto d-block">
-                </div>
-                <div class="col-md p-3 text-light text-center">
-                    <p class="text-warning h3">Today is</p>
-                    <h4 class="text-shadow h2">Samson´s Birthday4</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Fin RIBBON-->
-    <!--Inicio SEPARADOR RIBBON-->
-    <div id="separator-ribbon">
-        <div class="content bg-warning" ></div>
-    </div>
-    <!--Fin SEPARADOR RIBBON-->
-    <!--Inicio GAMES-->
-    <div id="games">
-        <div class="container-md p-5">
-            <div class="row pt-5">
-                <h3 class="text-center py-5 h1">Featured Animal Crossing Games</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card w-100 card-border mb-5">
-                        <img src="img/card01.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title 
-                                and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card w-100 card-border mb-5">
-                        <img src="img/card02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title 
-                                and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card w-100 card-border mb-5">
-                        <img src="img/card03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title 
-                                and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col">
-                    <h3 class="text-center texto-games">More Games on Nintendo.com</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-2 text-sm-center text-md-end"><a href="#">Nintendo Switch</a></div>
-                <div class="col-md-6 col-lg-2 text-sm-center text-md-start"><a href="#">Nintendo 3DS</a></div>
-                <div class="col-md-6 col-lg-1 text-sm-center text-md-end"><a href="#">Wii U</a></div>
-                <div class="col-md-6 col-lg-1 text-sm-center text-md-start"><a href="#">Mobile</a></div>
-                <div class="col-md-6 col-lg-1 text-sm-center"><a href="#">Retro</a></div>
-            </div>
-        </div>
-    </div>
-    <!--Fin GAMES-->
-    <!--Inicio SEPARADOR AMIIBOS-->
-    <div id="separator-amiibos">
-        <div class="content bg-success"></div>
-    </div>
-    <!--Fin SEPARADOR AMIIBOS-->
-    <!--Inicio AMIIBOS-->
-        <div id="amiibos" class="px-5 pb-5 bg-success">
-            <div class="container">
-                <div class="row">
-                    <h2 class="text-center text-white text-shadow">Featured Amiibo Figure</h2>
-                </div>
-                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
-                    <div class="col-sm">
-                        <img src="img/figure01.png" alt="" class="w-100 amiibo">
-                        <div class="text-center">
-                            <span class="amiibo-name h5 p-2">Isabelle</span>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="img/figure02.png" alt="" class="w-100 amiibo">
-                        <div class="text-center">
-                            <span class="amiibo-name h5 p-2">Kapp'n</span>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="img/figure03.png" alt="" class="w-100 amiibo">
-                        <div class="text-center">
-                            <span class="amiibo-name h5 p-2">Rover</span>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="img/figure04.png" alt="" class="w-100 amiibo">
-                        <div class="text-center">
-                            <span class="amiibo-name h5 p-2">Timmy & Tommy</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-5">
-                    <div class="col text-center">
-                        <a href="" class="link-dark">
-                            <button class="btn btn-warning btn-lg rounded-pill p-3 fw-bold">View Amiibo Catalogo</button>
-                        </a>
-                    </div>
-                </div>
-                <div id="separator-amiibos-footer"></div>
-            </div>
-        </div>
-    <!--Fin AMIIBOS-->
-    <!--Inicio PLAY NINTENDO-->
-    <div id="play">
+    <!--Fin LandingPage-->
+    <!--Inicio Actualidad-->
+    <div id="play" class="bg-black">
         <div class="container-sm p-5">
             <div class="row">
-                <h3 class="text-center h1">Isabelle and friends on Play Nintendo</h3>
+                <h3 class="text-center h1">Actually</h3>
             </div>
             <div class="row justify-content-center align-item-center">
-                <div class="col-3 d-none d-md-block">
-                    <img src="img/isabelle.png" alt="" class="w-100">
-                </div>
-                <div class="col-9">
+                <div class="col-12">
                     <div class="row">
-                        <div class="col p-1">
-                            <div class="card bg-primary text-white">
+                        <div class="col-12 col-md-12 col-lg-4 offset-lg-2 p-1">
+                            <div class="card bg-black text-white">
                                 <div class="row g-0">
-                                    <div class="col-md-6">
-                                        <img src="img/ph-01.jpg" alt="" class="w-100 card-img-top">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card Title</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Optio dolorem aperiam harum ut debitis accusantium porro dolorum, 
-                                            unde et veritatis maiores est quo architecto earum fuga sed in at? Quis.</p>
+                                    <div class="col-12">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title mb-4">Gallery</h5>
+                                            <div class="">
+                                                <div class="row justify-content-center m-auto mb-3">
+                                                    <div class="col-2"><img src="audiovisual/sweet/manzanas.jpeg" alt="" width="80px" height="80px"></div>
+                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/coconut.jpeg" alt="" width="80px" height="80px"></div>
+                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/cherry.jpeg" alt="" width="80px" height="80px"></div>
+                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/apples.jpeg" alt="" width="80px" height="80px"></div>
+                                                </div>
+                                                <div class="row justify-content-center m-auto">
+                                                    <div class="col-2"><img src="audiovisual/sweet/coffee.jpeg" alt="" width="80px" height="80px"></div>
+                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/passionfruit.jpg" alt="" width="80px" height="80px"></div>
+                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/peach.jpeg" alt="" width="80px" height="80px"></div>
+                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/estococa.jpg" alt="" width="80px" height="80px"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col text-center">
+                                                    <a href="" class="link-dark">
+                                                        <button class="btn btn-warning p-auto fw-bold">Explore</button>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col p-1">
-                            <div class="card bg-danger text-white">
-                                <div class="row g-0">
-                                    <div class="col-md-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card Title</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Optio dolorem aperiam harum ut debitis accusantium porro dolorum, 
-                                            unde et veritatis maiores est quo architecto earum fuga sed in at? Quis.</p>
+                        <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
+                            <div class="card bg-black text-white">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title mb-4">New/Events</h5>
+                                            <h6>11/11/11</h6>
+                                            <h4>¡Flavours to your tasting!</h4>
+                                            <p class="card-text">
+                                                Tasting have not never been a fruit. Citric or sweet. 
+                                                What make you tongle melted? 
+                                                A lot of tropical fruits for you.
+                                                C'mon and choose your basket.
+                                                Sweet is tasting!
+                                            </p>
+                                            <div class="row py-5">
+                                                <a href="" class="link-dark">
+                                                    <button class="btn btn-warning p-auto fw-bold">Explore</button>
+                                                </a>                                               
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img src="img/ph-02.jpg" alt="" class="w-100">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col p-1">
-                            <div class="card bg-success text-white">
-                                <div class="row g-0">
-                                    <div class="col-md-6">
-                                        <img src="img/ph-01.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card Title</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Optio dolorem aperiam harum ut debitis accusantium porro dolorum, 
-                                            unde et veritatis maiores est quo architecto earum fuga sed in at? Quis.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col p-1">
-                            <div class="card bg-warning text-white">
-                                <div class="row g-0">
-                                    <div class="col-md-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card Title</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Optio dolorem aperiam harum ut debitis accusantium porro dolorum, 
-                                            unde et veritatis maiores est quo architecto earum fuga sed in at? Quis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img src="img/ph-02.jpg" alt="" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -278,32 +130,85 @@
             </div>
         </div>
     </div>
-    <!--Fin PLAY NINTENDO-->
-    <!--Inicio FOOTER-->
-    <div id="footer" class="p-5">
-        <div class="container w-50 pt-5">
-            <div class="row row-cols-md-2 justify-content-md-center">
-                <div class="col text-center">
-                    <a href="#">
-                        <button class="btn btn-lg btn-primary rounded-pill w-100 p-3 fw-bold shadow">
-                            Customer Support
-                        </button>
-                    </a>
+    <!--Inicio CARROUSEL-->
+    <div class="row bg-black">
+        <h3 class="text-center h1">Collections</h3>
+    </div>
+        <div class="slide hi-slide">
+            <div class="hi-prev"></div>
+            <div class="hi-next"></div>
+            <ul>
+                <li>
+                    <img src="audiovisual/colecciones-1.jpg" class="img-slide" alt=""> 
+                </li>
+                <li>
+                    <img src="audiovisual/coleccion.2.jpg" class="img-slide" alt=""> 
+                </li>
+                <li>
+                    <img src="audiovisual/coleccion-3.jpg" class="img-slide" alt="">
+                </li>
+                <li>
+                    <img src="audiovisual/coleccion-4.jpg" class="img-slide" alt="">
+                </li>
+                <li>
+                    <img src="audiovisual/coleccion-5.jpg" class="img-slide" alt="">
+                </li>
+            </ul>
+        </div>
+    <!--Fin CARROUSEL-->
+    <div class="container quienes-somos">
+        <div class="row justify-content-center text-center">
+            <h5 class="text-center h1-collections fw-bold">Quienes Somos</h5>
+            <h6 class="mb-4">Hystory, family and creativity</h6>
+            <div class="row justify-content-center">
+                <div class="col-5 col-md-4 col-lg-2">
+                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                        <img src="audiovisual/familia.jpg" alt="" width="142px" height="160px">
+                    </div>
+                    <div class="row py-3 py-md-5">
+                        <a href="" class="link-dark">
+                            <button class="btn col-12 border border-dark p-auto fw-bold">Family</button>
+                        </a>                                               
+                    </div>
+                </div>   
+                <div class="col-5 col-md-4 col-lg-2">
+                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                        <img src="audiovisual/historia.jpg" alt="" width="142px" height="160px">
+                    </div>
+                    <div class="row py-3 py-md-5">
+                        <a href="" class="link-dark">
+                            <button class="btn  col-12 border border-dark p-auto fw-bold">History</button>
+                        </a>                                               
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-md-center py-5">
-                <div class="col text-center fw-light">
-                    <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D mode for chlidren 6 and under.</p>
-                    <p>Internet access required for online features. For more info, go to support.nintendo.com</p>
-                    <p>Games and amiibo accesories sold separately. Figures shown not actual size. 
-                        Compatibility and functionality of amiibo mar vary per game. 
-                        Visit amiibo.com for specific details on how each amiibo works</p>
-                    <p>&copy;2001 - 2021 Nintendo. Nintendo properties are trademarks of Nintendo</p>
-                </div>
+                <div class="col-5 col-md-4 col-lg-2">
+                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                        <img src="audiovisual/sweet/travels.jpeg" alt="" width="142px" height="160px">
+                    </div>
+                    <div class="row py-3 py-md-5">
+                        <a href="" class="link-dark">
+                            <button class="btn col-12 border border-dark p-auto fw-bold">Travels</button>
+                        </a>                                               
+                    </div>
+                </div>   
+                <div class="col-5 col-md-4 col-lg-2">
+                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                        <img src="audiovisual/sweet/matier.jpeg" alt="" width="142px" height="160px">
+                    </div>
+                    <div class="row py-3 py-md-5">
+                        <a href="" class="link-dark">
+                            <button class="btn col-12 border border-dark p-auto fw-bold">Products</button>
+                        </a>                                               
+                    </div>
+                </div>   
             </div>
         </div>
     </div>
-    <!--Fin FOOTER-->
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/jquery.hislide.js"></script>
+    <script>
+        $('.slide').hiSlide();
+    </script>
 </body>
 </html>
