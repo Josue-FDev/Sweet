@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,113 +14,117 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Css Personalizado -->
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Gliper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
 <body>
     <!--Inicio NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+    <section class="bg-black">
         <div class="container">
-            <!-- <div class="row"> -->
-                <!-- <div class="col-2 bg-red"> -->
-                    <a class="navbar-brand" href="#">
-                        <img src="" alt="" width="200px" background="#fff">
-                    </a>          
-                <!-- </div> -->
-                <!-- <div class="col-5 ms-auto"> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="row">
+                <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+                    <div class="col-2">
+                        <a class="navbar-brand" href="#">
+                            <h4 class="text-white">SWEET</h4>
+                            <img src="" alt="" width="200px" background="#fff">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto text-center">
-                            <li class="nav-item">
-                                <!-- tag "a" para hipervinculos -->
-                                <!--- aria-current  es una guia de software con dirreccion de navegaciom-->
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#actually">Actually</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#carouselExampleSlidesOnly">Collections</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Boutique</a>
-                            </li>
-                        </ul>
+                    <div class="col-10 col-md-9 col-lg-6 col-xl-8 ms-auto">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#landingpage">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#actually">Actually</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#carouselExampleSlidesOnly">Collections</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aboutus">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#boutique">Boutique</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                <!-- </div> -->
-            <!-- </div> -->
+                </nav>
+            </div>
         </div>
-    </nav>
+    </section>
     <!--Fin NAVBAR-->
     <!--Inicio Landingpage-->
     <div id="landingpage" class="">
-        <img src="audiovisual/choco.jpeg" alt="" srcset="" width="1280px" height="680px">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <p class="sweet" id="sweet">Sweet</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="slogan">
+            <div class="container cuadro">
+                <div class="row justify-content-center text-center cuadro-center">
+                    <div class="col-12">
+                        <p class="experience">A place to live the fruit experience ... </p>
+                    </div>
+                    <div class="col cuadro-btn">
+                        <button class="btn btn-lg mb-4">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Fin LandingPage-->
     <!--Inicio Actualidad-->
-    <div id="play" class="bg-black">
+    <section id="actually" class="bg-black">
         <div class="container-sm p-5">
             <div class="row">
-                <h3 class="text-center h1">Actually</h3>
+                <h3 class="text-center text-white mt-5 title">Actually</h3>
             </div>
             <div class="row justify-content-center align-item-center">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-md-12 col-lg-4 offset-lg-2 p-1">
-                            <div class="card bg-black text-white">
-                                <div class="row g-0">
-                                    <div class="col-12">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title mb-4">Gallery</h5>
-                                            <div class="">
-                                                <div class="row justify-content-center m-auto mb-3">
-                                                    <div class="col-2"><img src="audiovisual/sweet/manzanas.jpeg" alt="" width="80px" height="80px"></div>
-                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/coconut.jpeg" alt="" width="80px" height="80px"></div>
-                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/cherry.jpeg" alt="" width="80px" height="80px"></div>
-                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/apples.jpeg" alt="" width="80px" height="80px"></div>
-                                                </div>
-                                                <div class="row justify-content-center m-auto">
-                                                    <div class="col-2"><img src="audiovisual/sweet/coffee.jpeg" alt="" width="80px" height="80px"></div>
-                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/passionfruit.jpg" alt="" width="80px" height="80px"></div>
-                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/peach.jpeg" alt="" width="80px" height="80px"></div>
-                                                    <div class="col-2 offset-1"><img src="audiovisual/sweet/estococa.jpg" alt="" width="80px" height="80px"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-5">
-                                                <div class="col text-center">
-                                                    <a href="" class="link-dark">
-                                                        <button class="btn btn-warning p-auto fw-bold">Explore</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="card bg-black text-white">
+                        <div class="row g-0">
+                            <div class="col-12">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-4 fw-bold">Gallery</h5>
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/manzanas.jpeg" alt=""
+                                                width="80px" height="80px"></div>
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/coconut.jpeg" alt=""
+                                                width="80px" height="80px"></div>
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/cherry.jpeg" alt=""
+                                                width="80px" height="80px"></div>
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/apples.jpeg" alt=""
+                                                width="80px" height="80px"></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
-                            <div class="card bg-black text-white">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title mb-4">New/Events</h5>
-                                            <h6>11/11/11</h6>
-                                            <h4>¡Flavours to your tasting!</h4>
-                                            <p class="card-text">
-                                                Tasting have not never been a fruit. Citric or sweet. 
-                                                What make you tongle melted? 
-                                                A lot of tropical fruits for you.
-                                                C'mon and choose your basket.
-                                                Sweet is tasting!
-                                            </p>
-                                            <div class="row py-5">
-                                                <a href="" class="link-dark">
-                                                    <button class="btn btn-warning p-auto fw-bold">Explore</button>
-                                                </a>                                               
-                                            </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/coffee.jpeg" alt=""
+                                                width="80px" height="80px"></div>
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/passionfruit.jpg" alt=""
+                                                width="80px" height="80px"></div>
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/peach.jpeg" alt=""
+                                                width="80px" height="80px"></div>
+                                        <div class="col-2 m-auto"><img src="audiovisual/sweet/estococa.jpg" alt=""
+                                                width="80px" height="80px"></div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="col text-center">
+                                            <a href="" class="link-dark">
+                                                <button class="btn border border-white">Explore</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,88 +132,285 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="card bg-black text-white">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-4 fw-bold">New/Events</h5>
+                                    <h5 class="mb-3">11/11/11</h5>
+                                    <h4 class="mb-2">¡Flavours to your tasting!</h4>
+                                    <p class="card-text lead parrafo mt-3">
+                                        Wanting to tast a seasonal fruits?<br>
+                                        C-mon an give you a tropical experience.<br>
+                                        Sweet is tasting now! <br> Join us!
+                                    </p>
+                                    <div class="row mt-5">
+                                        <a href="" class="link-dark">
+                                            <button class="btn border border-white">Explore</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+    </section>
+    <!-- Fin ACUTALIDAD -->
     <!--Inicio CARROUSEL-->
-    <div class="row bg-black">
-        <h3 class="text-center h1">Collections</h3>
-    </div>
-        <div class="slide hi-slide">
-            <div class="hi-prev"></div>
-            <div class="hi-next"></div>
-            <ul>
-                <li>
-                    <img src="audiovisual/colecciones-1.jpg" class="img-slide" alt=""> 
-                </li>
-                <li>
-                    <img src="audiovisual/coleccion.2.jpg" class="img-slide" alt=""> 
-                </li>
-                <li>
-                    <img src="audiovisual/coleccion-3.jpg" class="img-slide" alt="">
-                </li>
-                <li>
-                    <img src="audiovisual/coleccion-4.jpg" class="img-slide" alt="">
-                </li>
-                <li>
-                    <img src="audiovisual/coleccion-5.jpg" class="img-slide" alt="">
-                </li>
-            </ul>
+    <div class="contenedor">
+        <div class="carousel">
+            <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/picnic.jpg" alt="">
+                        <p>Rock and Roll Hall of Fame</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/local.jpg" alt="">
+                        <p>Constitution Square - Tower I</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/morning.jpg" alt="">
+                        <p>Empire State Building</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/strawberries.jpg" alt="">
+                        <p>Harmony Tower</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/fruitsbowls.jpg" alt="">
+                        <p>Empire State Building</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/cakes.jpg" alt="">
+                        <p>Harmony Tower</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/berries.jpg" alt="">
+                        <p>Empire State Building</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="audiovisual/sweet/brownies.jpg" alt="">
+                        <p>Harmony Tower</p>
+                    </div>
+                </div>
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div role="tablist" class="carousel__indicadores"></div>
         </div>
+    </div>
     <!--Fin CARROUSEL-->
-    <div class="container quienes-somos">
+    <!-- INICIO QUIENES SOMOS -->
+    <div class="container" id="aboutus">
         <div class="row justify-content-center text-center">
-            <h5 class="text-center h1-collections fw-bold">Quienes Somos</h5>
-            <h6 class="mb-4">Hystory, family and creativity</h6>
+            <h3 class="text-center text-black fw-bold mt-5 title">About us</h3>
+            <h5 class="mb-4 texto-about">History, family and creativity</h5>
             <div class="row justify-content-center">
                 <div class="col-5 col-md-4 col-lg-2">
-                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                    <div class="border border-dark  p-md-2 p-lg-2 overflow-hidden">
                         <img src="audiovisual/familia.jpg" alt="" width="142px" height="160px">
                     </div>
                     <div class="row py-3 py-md-5">
                         <a href="" class="link-dark">
                             <button class="btn col-12 border border-dark p-auto fw-bold">Family</button>
-                        </a>                                               
+                        </a>
                     </div>
-                </div>   
+                </div>
                 <div class="col-5 col-md-4 col-lg-2">
-                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                    <div class="border border-dark p-md-2 p-lg-2 overflow-hidden">
                         <img src="audiovisual/historia.jpg" alt="" width="142px" height="160px">
                     </div>
                     <div class="row py-3 py-md-5">
                         <a href="" class="link-dark">
                             <button class="btn  col-12 border border-dark p-auto fw-bold">History</button>
-                        </a>                                               
+                        </a>
                     </div>
                 </div>
                 <div class="col-5 col-md-4 col-lg-2">
-                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                    <div class="border border-dark p-md-2 p-lg-2 overflow-hidden">
                         <img src="audiovisual/sweet/travels.jpeg" alt="" width="142px" height="160px">
                     </div>
                     <div class="row py-3 py-md-5">
                         <a href="" class="link-dark">
                             <button class="btn col-12 border border-dark p-auto fw-bold">Travels</button>
-                        </a>                                               
+                        </a>
                     </div>
-                </div>   
+                </div>
                 <div class="col-5 col-md-4 col-lg-2">
-                    <div class="border border-dark p-2 p-md-2 p-lg-2">
+                    <div class="border border-dark p-md-2 p-lg-2 overflow-hidden">
                         <img src="audiovisual/sweet/matier.jpeg" alt="" width="142px" height="160px">
                     </div>
                     <div class="row py-3 py-md-5">
                         <a href="" class="link-dark">
                             <button class="btn col-12 border border-dark p-auto fw-bold">Products</button>
-                        </a>                                               
+                        </a>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
     </div>
+    <!-- FIN QUIENES SOMOS -->
+    <!-- INICIO BOUTIQUE -->
+    <section class="" id="boutique">
+        <div class="row bg-black overflow-hidden">
+            <div class="col-12 col-md-0 col-lg-3" class="">
+                <img src="audiovisual/sweet/localstore2.jpeg" alt="" class="img-localstore w-100">
+            </div>
+            <div class="col-10 col-md-6 col-lg-3 justify-content-center text-center m-auto">
+                <h3 class="text-white boutique-studio mt-5 title">Boutique</h3>
+                <div class="row">
+                    <div class="col-6 ms-auto col-md-5 col-lg-6">
+                        <h6 class="text-white">Town</h6>
+                        <p class="text-white lead">Santa Maria de Dota</p>
+                    </div>
+                    <div class="col-4 me-auto col-lg-6">
+                        <h6 class="text-white">City</h6>
+                        <p class="text-white lead">San Jose</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                            <div class="col-4 m-auto">
+                                <div id="icon" class="">
+                                    <i class="fa-solid fa-location-dot text-white fa"></i>
+                                </div>
+                            </div>
+                    
+                </div>
+                <h6 class="text-center text-white mt-5">Studio</h6>
+                <p class="text-white lead">Design Studio.</p>
+                <p class="text-white lead">Calle Higueronal</p>
+            </div>
+            <div class="col-10 offset-1 col-md-6 m-auto col-lg-3 me-auto boutique-img-contact">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-12 m-auto"> -->
+                    <img src="audiovisual/sweet/localstore.jpeg" alt="" class="w-100 m-auto">
+                    <!-- </div> -->
+                </div>
+                <h5 class="text-center text-white mt-5">Contact/NewsLetter</h5>
+                <form action="" class="m-auto mb-4">
+                    <div class="row">
+                        <input type="text" class="col-5 name casilla" placeholder="Name">
+                        <input type="text" class="col-6 lastname offset-1 casilla" placeholder="Last Name">
+                        <input type="text" class="col-5 email mt-3 mb-3 casilla" placeholder="Email">
+                        <input type="text" class="col-6 telephon mt-3 mb-3 offset-1 casilla" placeholder="Telephone">
+                        <input type="text" class="col-12 message casilla" placeholder="Message">
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-2 ms-auto">
+                            <a href="" class="link-dark">
+                                <button class="btn border border-white">Send</button>
+                            </a>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Fin BOUTIQUE -->
+    <!-- Inicio Q&A after shopping -->
+    <section class="bg-dark w-100" id="q-a">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-12 col-sm-12 col-lg-6 ms-auto mt-5">
+                    <h6 class="mb-4 h4 h-sweet">Sweet, quality fruits</h6>
+                    <p class="lead mb-5 h5">We are available to answer your desires.</p>
+                    <button class="btn border border-white col-6 col-sm-6 col-md-8 mb-5 contact">Contact us after
+                        shipping</button>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 mt-0 me-auto mt-sm-0">
+                    <div class="row justify-content-center text-center col-icons my-md-5">
+                        <div class="col col-sm-12 col-md-4 m-auto mt-auto">
+                            <div id="icon" class="mb-3 circulo">
+                                <i class="fa-solid fa-gift mb-2 fa"></i>
+                            </div>
+                            <h6>Gift</h6>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-4 me-md-auto">
+                            <div id="icon" class="mb-3 circulo">
+                                <i class="fa-solid fa-gem mb-2 fa"></i>
+                            </div>
+                            <h6>Investment</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Q&A -->
+    <!-- Engagement -->
+    <section class="" id="engagement">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <h3 class="mt-5 fw-bold title">Engagement</h3>
+                <div class="col-12 col-md-6 col-xl-6 ms-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-2 col-xl-12 ms-auto">
+                            <img src="audiovisual/sweet/Logo-fdev.jpg" alt="" srcset="" width="140px" height="100px">
+                        </div>
+                        <div class="col me-auto col-md-8 col-xl-12 me-xl-3 m-auto">
+                            <h6 class="mb-4 fw-bold">Sponsor</h6>
+                            <h5 class="">Josue F-Dev</h5>
+                            <h5 class="texto-slogan">Growing together</h5>
+                        </div>
+                        <p class="lead mb-4">Supporting startups.</p>
+                    </div>
+                    <button class="btn border border-dark col-3 mb-5">Find out</button>
+                </div>
+                <div class="col-12 col-md-6 col-xl-6 me-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-2 col-xl-12 me-auto">
+                            <img src="audiovisual/sweet/work.jpeg" alt="" srcset="" width="140px" height="100px">
+                        </div>
+                        <div class="col col-md-8 col-xl-12 ms-auto">
+                            <h6 class="mb-4 fw-bold">Assocciation</h6>
+                            <h5 class="">Organic</h5>
+                            <h5 class="texto-slogan">Ecology gardens.</h5>
+                        </div>
+                        <p class="lead mb-4">Making alliance with local farmers.</p>
+                    </div>
+                    <button class="btn border border-dark col-3 mb-5">Find out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white pt-3 pb-3">
+                <a class="col-3 col-md-2 text-decoration-none text-reset" href="#actually">Actually</a>
+                <a class="col-3 col-md-2 text-decoration-none text-reset" href="#aboutus">About us</a>
+                <a class="col-3 col-md-2 text-decoration-none text-reset" href="#boutique">Boutique</a>
+                <a class="col-3 col-md-2 text-decoration-none text-reset" href="#engament">Engament</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Boutique -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="js/jquery.hislide.js"></script>
+    <script src="js/app.js"></script>
     <script>
         $('.slide').hiSlide();
     </script>
+    <script type="text/javascript">
+        let sweet = document.getElementById('sweet');
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            sweet.style.top = -value * 0.5 + 'px';
+            // sweet.style.fontSize = sweet - 100 + 'px';
+        })
+    </script>
 </body>
+
 </html>

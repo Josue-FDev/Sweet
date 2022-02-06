@@ -1,6 +1,12 @@
+*{
+    font-family: var(--main-font-family);
+}
 @font-face{
     font-family: Galgony;
     src: url(font\Galgony.ttf);
+}
+:root{
+    --main-font-family: Galgony;
 }
 h1,h2,h3,h4,h5,button{
     font-family: 'Galgony';
@@ -9,67 +15,301 @@ h1,h2,h3,h4,h5,button{
     margin-bottom: 24px;
     color: #fff;
 }
-.collections{
-    margin-bottom: 24px;
-    color: #000;
+
+::placeholder{
+    color: #fff;
+    font-family: var(--main-font-family);
 }
+.casilla{
+    background-color: gray;
+}
+/* NAVBAR */
+.nav-link{
+    font-family: var(--main-font-family);
+}
+/* LANDINGPAGE */
 #landingpage{
+    background-image: url(../audiovisual/sweet/choco.jpeg);
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
 }
-
-.hi-slide{
+#landingpage .sweet{
+    color: #fff;
     position: relative;
 }
-.hi-slide .hi-prev, .hi-slide .hi-next{
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    width: 50px;
-    height: 50px;
-    margin-top: -50px;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    background: rgb(29, 4, 4);
-    color: rgb(250, 244, 244);
-    transition: all .7s;
-    font-size: 20px;
+#slogan .cuadro{
+    margin-bottom: 0px;
+}
+#slogan .cuadro-center{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: auto;
+}
+#slogan .experience{
+    font-family: var(--main-font-family);
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+#slogan button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    z-index: 10;
+    border: 1px solid;
+    padding: 0px 16px;
 }
-.hi-slide .hi-prev:hover, .hi-slide .hi-next:hover{
-    opacity: 1;
+#slogan button:hover{
+    background-color: rgb(29, 28, 28);
+    color: rgb(255, 255, 255);
+    box-shadow: none;
 }
-.hi-slide .hi-prev{
-    left: 70px;
+#slogan .cuadro-btn{
+    background-color: #fff;
 }
-.hi-slide .hi-prev::before{
-    content: '<';
+
+
+/* ACTUALLY */
+#actually{
+    margin-top: -50px;
+    /* z-index: -10; */
 }
-.hi-slide .hi-next{
-    right: -70px;
+#actually button{
+    color: #fff;
 }
-.hi-slide .hi-next::before{
-    content: '>';
+#actually button:hover{
+    background-color: #fff;
+    color: #000;
 }
-.hi-slide > ul{
-    display: flex;
-    list-style: none;
+
+
+/* COLLECTION */
+
+
+
+
+
+/* ABOUT US */
+#aboutus button:hover{
+    background-color: #000;
+    color:#fff;
 }
-.hi-slide > ul > li {
-    z-index: 0;
-    width: 0;
-    height: 0;
-    cursor: pointer;
-    visibility: visible;
+
+
+/* BOUTIQUE */
+.boutique-studio, .boutique-img-contact{
+    margin-top: 6rem;
 }
-.hi-slide > ul > li > li {
-    width: 100%;
-    height: 100%;
-    background-position: center;
+#boutique button{
+    color: #fff;
 }
-.img-slide{
-    width: 100%;
-    height: 100%;
+#boutique button:hover{
+    background-color: #fff;
+    color: #000;
+}
+#icon{
+    border-radius: 100%;
+    border-color: #fff;
+}
+.fa-gift, .fa-gem, .fa-location-dot{
+    border-color: #fff;
+    font-size: 51px;
+}
+
+/* Q&A */
+#q-a{
+    width: 100vw;
+}
+#q-a button{
+    color: #fff;
+}
+#q-a button:hover{
+    background-color: #fff;
+    color: #000;
+}
+#q-a .col-icons{
+    margin-top: 0px;
+}
+#q-a .fa{
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+/* ENGAGEMENT */
+#engagement button{
+    font-weight: bold;
+}
+#engagement button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* BREAK POINTS */
+/* X-Small */
+@media (min-width: 0px){
+    .nav-link{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .parrafo{
+        font-size: 16px;
+    }
+    #landingpage .sweet{
+        font-size: 60px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    #landingpage .experience{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+        margin-left: auto;
+    }
+    #landingpage button{
+        /* margin-top: 0px; */
+        font-size: 20px;
+    }
+    /* Q&A */
+    /* #q-a .col-icons{
+        margin-top: 0%;
+    } */
+    #q-a .contact{
+        margin-bottom: 0%;
+    }
+    .fa-gift{font-size: 30px;}
+    .fa-gem{font-size: 30px;}
+    #slogan .cuadro-center{
+        width: 80%;
+    }
+    .texto-slogan{
+        font-size: 14px;
+    }
+    #engagement button{
+        font-size: 16px;
+    }
+}
+/* Small : sm */
+@media (min-width: 576px){
+    #q-a .contact{
+        font-size: 15px;
+    }
+    .fa-gift{font-size: 40px;}
+    .fa-gem{font-size: 40px;}
+    .nav-link{
+        font-size: 24px;
+    }
+    #landingpage .sweet{
+        font-size: 120px;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    #slogan .experience{
+        font-size: 24px;
+    }
+    #slogan .cuadro-center{
+        width: 80%;
+    }
+    #slogan button{
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px) {
+
+	/* .contenido-principal {
+		flex-direction: column;
+	}
+	.contenido-principal > * {
+		width: 100%;
+	} */
+}
+/* Medium : md */
+@media (min-width: 768px){
+    .nav-link{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .parrafo{
+        font-size: 16px;
+    }
+    #slogan .experience{
+        font-size: 30px;
+    }
+    #slogan .cuadro-center{
+        width: 80%;
+    }
+    #landingpage .sweet{
+        font-size: 100px;
+    }
+    #slogan button{
+        font-size: 32px;
+    }
+}
+/* Large : lg */
+@media (min-width: 992px){
+    #boutique .fa{
+        border: 1px solid #fff;
+        border-radius: 100%;
+        padding: 20px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    #landingpage .sweet{
+        font-size: 200px;
+    }
+    #landingpage .experience{
+        font-size: 24px;
+    }
+    #landingpage button{
+        font-size: 1rem;
+    }
+}
+/* Extra Large : xl */
+@media (min-width: 1200px){
+    .nav-link{
+        font-size: 24px;
+    }
+    #landingpage .sweet{
+        font-size: 100px;
+    }
+    #landingpage .experience{
+        font-size: 38px;
+    }
+    #landingpage button{
+        font-size: 2rem;
+    }
+    #aboutus button{
+   font-size: 1.5rem;
+    }
+    #aboutus .texto-about{
+        font-size: 30px;
+    }
+}
+/* Extra extra large : xxl */
+@media (min-width: 1400px){
+    /* NAVBAR */
+    .nav-link{
+        font-size: 40px;
+    }
+    #landingpage .sweet{
+        font-size: 200px;
+    }
+    .h-sweet{
+        font-size: 35px;
+    }
+    .p-available{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #aboutus .subtitle{
+        font-size: 28px;
+    }
+    #aboutus button{
+        font-size: 40px;
+    }
 }
