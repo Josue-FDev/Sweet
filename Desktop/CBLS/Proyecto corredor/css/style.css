@@ -1,0 +1,330 @@
+:root{
+    --main-font-family: AXIS Extra Bold;
+    --main-color: #66AA2A;
+    /* variables de textos */
+    --main-text-menu: 2rem;
+    --main-title: 4rem;
+    --main-subtitles: 2.5rem;
+    --main-paragraph: 1.5rem;
+    /* variables del button  */
+    --main-button-color: #66AA2A;
+    --main-button-border-radius: 5px;
+    --main-button-text-size: 1rem;
+    --main-button-text-color: #fff;
+    /* variables de espaciado */
+    --main-padding: 100px;
+}
+@font-face {
+    font-family: AXIS Extra Bold;
+    src: url(../font/Axis\ Extrabold.otf);
+}
+*{
+    transition: .2s linear;
+}
+body{
+    /* padding: var(--main-padding);*/
+    position: relative; 
+} 
+/* Inicio del home */
+#home{
+    background: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#navbarProyectos{
+    color: #FFF;
+}
+#logo{
+    margin-top: -0.1rem;
+    transform: scale(1.3);
+}
+#corredor{
+    padding: 250px 0;
+    text-align: center;
+    font-family: AXIS Extra Bold;
+}
+#corredor h1{
+    font-size: 4rem;
+    color: #66aa2a;
+}
+#corredor h2{
+    font-size: 10rem;
+}
+#corredor button{
+    color: #66aa2a;
+}
+#corredor span{
+    color: #fff;
+}
+#verVideo{
+    background:#66aa2a;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    font-size: 2rem;
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+#verVideo :hover{
+    letter-spacing: 0.2rem;
+}
+#lupa{
+    color: #fff;
+}
+#search{
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+}
+#navbarProyectos{
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+}
+#navbarProyectos :hover{
+    background: #66aa2a;
+}
+#navbarh :hover{
+    color: #66aa2a;
+}
+/* Fin del home */
+/* Seccion Sobre Nosotros */
+/* Titulo */
+#quienes-somos{
+    position: relative;
+}
+#quienes-somos h1{
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    font-size: 2rem;
+}
+#quienes-somos .title-1{
+    color: #000;
+}
+/* Parrafo */
+.conexion{
+    position: relative;
+    font-size: 40px;
+    font-family: var(--main-font-family);
+    /* margin-top: 100px; */
+}
+/* Button */
+.mas{
+    font-size: 1.2rem;
+    font-family: var(--main-font-family);
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.mas:hover{
+    letter-spacing: 0.2rem;
+}
+
+/* Box-text */
+#box-text p strong{
+    color: var(--main-color);
+}
+#box-text{
+    display: none;
+    /* width: 500px;
+    height:300px; */
+    background-color: #ddd;
+    position: absolute;
+    z-index: 10; 
+    top: 75px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+    margin-top: 16px;
+}
+#mark{
+    background-color: #66AA2A;
+}
+#box-text::-webkit-scrollbar {
+    width: 20px;
+}
+  /* Track */
+#box-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  /* Handle */
+#box-text::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+/* Fin de Sobre Nosotros */
+/* Inicio de Proyectos */
+#tituloProyecto{
+    font-family: AXIS Extra Bold;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #66AA2A;
+    margin-top: 20px;
+    text-align: center;
+}
+.fotob{
+    width: 350px;
+    height: 520px;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#proyectosh :hover{
+    transform: scale(1.03);
+}
+.textos{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 75%; 
+}
+.textos p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.textos h3{
+    font-family: AXIS Extra Bold;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+}
+#botonMenu{
+    background:#66aa2a;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    font-size: 1rem;
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s linear;
+}
+#boton :hover{
+    letter-spacing: 0.2rem;
+}
+/* Fin de Proyectos */
+/*-- MEDIA QUERIES PARA RESPONSIVE --*/
+@media (max-width:1399px){
+    h1{font-size: 6rem;
+    }
+    #corredor h1{
+        font-size: 3rem;
+    }
+    #corredor h2{
+        font-size: 7rem;
+    }
+    #logo{
+        margin-bottom: 2rem;
+    }
+    .fotob{
+        width: 315px;
+    }
+    .textos p{
+        font-size: 20px;
+    }
+    .textos h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 992px){
+    #corredor h1{
+        font-size: 2rem;
+    }
+    #corredor h2{
+        font-size: 5rem;
+    }
+    #logo{
+        margin-top: -0.5rem;
+        transform: scale(1.3);
+        margin-bottom: 1rem;
+    }
+    #verVideo{
+        background:#66aa2a;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .6rem 1.5rem;
+        font-size: 1.5rem;
+        border: solid .1rem #66aa2a;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        
+    }
+    #verVideo :hover{
+        letter-spacing: 0.1rem;
+    }
+    .fotob{
+        width: 285px;
+    }
+    .textos{
+        top: 77%; 
+    } 
+    .textos p{
+        font-size: 20px;
+    }
+    .textos h3{
+        font-size: 24px;
+}
+@media (max-width: 768px){
+    .fotob{
+        width: 265px;
+    }
+    .textos{
+        top: 80%; 
+    } 
+    .textos p{
+        font-size: 18px;
+    }
+    .textos h3{
+        font-size: 22px;
+}  
+@media (max-width:576px){
+    #corredor{
+        padding: 200px 0;
+        text-align: center;
+    }
+    #corredor h1{
+        font-size: 1.5rem;
+    }
+    #corredor h2{
+        font-size: 3rem;
+    }
+    #verVideo{
+        background:#66aa2a;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .6rem 1.5rem;
+        font-size: 1rem;
+        border: solid .1rem #66aa2a;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        
+    }
+    #verVideo :hover{
+        letter-spacing: 0.1rem;
+    }
+    #logo{
+        margin-top: -0.6rem;
+        transform: scale(1.1);
+    }
+    }
+    .fotob{
+        width: 350px;
+        height: 450px;
+    }
+    .textos{
+        top: 75%; 
+    }  
+}    
+@media (max-width:380px){
+
+}
+}
